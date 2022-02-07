@@ -4,10 +4,16 @@
  * educator - string
  */
 
+interface Couse {
+  name: string;
+  duration: number;
+  educator: string;
+}
+
 
 class CreateCourseService {
 
-  execute(name: string, duration: number, educator: string) {
+  execute( { duration, educator, name  }: Couse) {
     console.log(name, duration, educator)
   }
 }
