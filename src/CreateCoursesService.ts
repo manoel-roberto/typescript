@@ -13,7 +13,7 @@ interface Couse {
 
 class CreateCourseService {
 
-  execute( { duration, educator, name  }: Couse) {
+  execute( { duration = 8, educator, name  }: Couse) {
     console.log(name, duration, educator)
   }
 }
